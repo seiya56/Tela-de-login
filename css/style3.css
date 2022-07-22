@@ -1,0 +1,79 @@
+@import '/css/Reset.css';
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
+
+body{
+   
+    font-family: 'Lexend Deca', sans-serif;
+    
+}
+main{
+    display: flex;
+}
+
+.bloco{
+    background-color: white;
+    height: 100vh;
+    width: 30rem;
+    position: relative;
+}
+.caixa_imagem{
+    display: flex;
+    align-items:flex-start;
+    justify-content: center;
+}
+.imagem{
+    margin-top: 28%;
+    width: 30%;
+}
+.caixa_texto{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction:column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 24.8%;
+}
+.input{
+    height: 3.5rem;
+    width: 25rem;
+    text-align: left;
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.447);
+    border: 0px ;
+    color: black;
+}
+.input::placeholder{
+    color: rgba(0, 0, 0, 0.516);
+    font-family: 'Lexend Deca', sans-serif;
+}
+.logo{
+    max-width: 11%;
+    padding: 0.4rem 3rem;
+    border-radius: 5px;
+}
+.caixa_externo{
+    max-width: 28%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(3,148px);
+    justify-content:center;
+    align-items: center;
+    top: 53%;
+    left: 2%;
+}
+#face{
+    background-color: blue;
+}
+#google{
+    background-color: rgb(190, 190, 190);
+}
+#apple{
+    background-color: rgb(0, 0, 0);
+}
+.wallpaper{
+    width: 100%;
+    background-image: url('Img/wallpaper.jpg');
+    background-size: cover;
+    background-position: center;
+}
