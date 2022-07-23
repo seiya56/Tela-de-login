@@ -1,11 +1,99 @@
 @import '/css/Reset.css';
 @import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;500;600;700&display=swap');
 
-body{
-   
+*
+{
     font-family: 'Lexend Deca', sans-serif;
-    
 }
+main
+{
+    display: flex;
+}
+.login{
+    background-color: white;
+    height: 100vh;
+    width: 500px;
+    display: grid;
+    justify-items: center;
+   
+}
+.logo{
+    width: 42%;
+    margin-top: 19%;
+}
+.input_login{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.1rem;
+}
+.input{
+    height: 60%;
+    width: 200%;
+    border-radius: 4px;
+    border: 0px;
+    background-color: rgb(180, 180, 180);
+    color: black;
+
+}
+.input::placeholder{
+    color: gray;
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 3ch;
+    text-align: left;
+    position: relative;
+    top: 3px;
+}
+.login_button{
+    margin-top: 80%;
+    height: 20%;
+    width: 20%;
+    border-radius: 4px;
+    border: 1px solid rgba(128, 128, 128, 0.088);
+    background-color: rgba(128, 128, 128, 0.088);
+}
+.links{
+    display: flex;
+    gap: 2rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    margin-right: 4%;
+}
+.links img{
+    width: 19%;
+    background-color: red;
+    padding: 10% 50%;
+    border-radius: 4px;
+}
+#links_ext1{
+    width: 16.5%;
+    background-color: black;
+}
+#links_ext3{
+    background-color: blue;
+}
+#links_ext2{
+    background-color: gray;
+}
+
+.wall{
+    width: 100%;
+    background-image: url(../Img/wallpaper.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media (max-width:719px){
+    .wall{
+        display: none;
+    }
+    main{
+        justify-content: center;
+    }
+}
+/*
 main{
     display: flex;
 }
@@ -77,3 +165,4 @@ main{
     background-size: cover;
     background-position: center;
 }
+*/
